@@ -1,50 +1,60 @@
-# React + TypeScript + Vite
+# Weather App using React Query
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌦️ Overview
+This project is a weather application built by following a tutorial from the YouTube channel **RoadsideCoder**. It utilizes React, React Query, ShadCN UI, and Tailwind CSS to fetch and display real-time weather information for different cities.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- Fetches real-time weather data using an API.
+- Displays temperature, humidity, and other weather details.
+- User-friendly UI with ShadCN components.
+- Efficient data fetching and caching with React Query.
+- Responsive design using Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **Frontend:** React, Vite, TypeScript
+- **State Management:** React Query
+- **UI Library:** ShadCN UI, Tailwind CSS
+- **API:** OpenWeatherMap or any other weather API
 
-## Expanding the ESLint configuration
+## 📦 Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/SriHariPokkimgari/Weather-App-using-reactQuery.git
+   cd Weather-App-using-reactQuery
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Create a `.env` file in the root directory and add:
+   ```sh
+   VITE_WEATHER_API_KEY=your_api_key_here
+   ```
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🏗️ Folder Structure
+```
+📦 Weather-App-using-reactQuery
+ ┣ 📂 src
+ ┃ ┣ 📂 components  # Reusable UI components
+ ┃ ┣ 📂 hooks       # Custom hooks
+ ┃ ┣ 📂 pages       # Application pages
+ ┃ ┣ 📂 services    # API calls
+ ┃ ┣ 📜 App.tsx     # Main app component
+ ┃ ┗ 📜 main.tsx    # Entry point
+ ┣ 📜 .gitignore
+ ┣ 📜 package.json
+ ┗ 📜 README.md
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🤝 Credits
+This project is based on a tutorial from **RoadsideCoder** on YouTube. Be sure to check out their channel for more learning resources.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 📜 License
+This project is licensed under the MIT License.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+✨ Made with ❤️ by Hari
