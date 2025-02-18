@@ -2,7 +2,6 @@ import { format } from "date-fns";
 import type { forecastData } from "../api/types";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { ArrowDown, ArrowUp, Droplet, Wind } from "lucide-react";
-
 interface weatherForecastProps {
   data: forecastData;
 }
